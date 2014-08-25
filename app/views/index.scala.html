@@ -1,0 +1,14 @@
+@(message: String)
+
+@main("Welcome to Play") {
+
+    <script type='text/javascript' src='@routes.Assets.at("js/index.js")'></script>
+
+    <ul id="skills"></ul>
+
+    <form action="@routes.Application.addSkill()" method="post">
+        <input type="text" name="name">
+        <button>Add Skill</button>
+    </form>
+
+}
